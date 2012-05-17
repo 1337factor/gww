@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GreenWW{% block extra_title %}{% endblock extra_title %}</title>
+		<link rel="stylesheet" type="text/css" href="/media/css/default.css" />{% block extra_head %}{% endblock extra_head %}
+	</head>
+	<body>
+		{% include 'blocks/head.html' %}
+		{% block main %}{% endblock main %}
+		{% include 'blocks/footer.html' %}
+		<script src="/media/js/jquery.js" type="text/javascript"></script>
+		<script src="/media/js/greenww.js" type="text/javascript"></script>
+	</body>
+</html>
